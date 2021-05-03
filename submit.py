@@ -9,7 +9,7 @@ from git import Repo
 repo = Repo(".")
 
 submit_file = Path(f"submissions/ceverett_{repo.head.commit.hexsha[:8]}.ipynb")
-assignment_name = "accumulation_opportunity"
+assignment_name = "{{cookiecutter.package_name}}"
 
 
 def write_submit_file():
@@ -56,14 +56,12 @@ if __name__ == "__main__":
     write_submit_file()
 
     if True:
-        assignment = course.get_assignment(351674)
+        assignment = course.get_assignment({{cookiecutter.package_name}})
 
         submission = assignment.submit(
             dict(
                 submission_type="online_upload",
             ),
             file=submit_file,
-            comment=dict(
-                text_comment="Cleaned up too many typos - no spell check for jupyter in vscode."
-            ),
+            comment=dict(text_comment="Submittting notebook."),
         )
