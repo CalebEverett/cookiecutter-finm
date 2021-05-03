@@ -1,5 +1,5 @@
 [paths]
-source = accumulation_opportunity
+source = {{cookiecutter.package_name}}
 
 [run]
 branch = true
