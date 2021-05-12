@@ -56,7 +56,7 @@ if __name__ == "__main__":
     write_submit_file()
 
     if True:
-        assignment = course.get_assignment({{cookiecutter.package_name}})
+        assignment = course.get_assignment({{cookiecutter.assignment_id}})
 
         submission = assignment.submit(
             dict(
