@@ -6,16 +6,17 @@ from urllib.request import urlretrieve
 import boto3
 from botocore import UNSIGNED
 from botocore.client import Config
+from canvasapi import Canvas
 import numpy as np
 import numpy as np
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
-import quandl
-from canvasapi import Canvas
 from plotly import colors
 from plotly.subplots import make_subplots
+import quandl
+import requests
 from scipy import stats
+from tqdm.notebook import tqdm
 
 # =============================================================================
 # Credentials
