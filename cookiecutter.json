@@ -3,7 +3,7 @@
     "email": "caleb@calebeverett.io",
     "github_username": "CalebEverett",
     "project_name": "Carry Trade",
-    "assignmnet_id": "353166",
+    "assignment_id": "353166",
     "package_name": "{{ cookiecutter.project_name | slugify | replace('-','_') }}",
     "repo_name": "{{ cookiecutter.github_username }}/finm33150-{{ cookiecutter.project_name | slugify }}",
     "project_short_description": "Solution implementations for {{ cookiecutter.project_name }}",
