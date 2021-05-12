@@ -3,6 +3,10 @@ import os
 from typing import Dict, List
 from urllib.request import urlretrieve
 
+import boto3
+from botocore import UNSIGNED
+from botocore.client import Config
+import numpy as np
 import numpy as np
 import pandas as pd
 import plotly.express as px
