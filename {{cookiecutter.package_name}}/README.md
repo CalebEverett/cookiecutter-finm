@@ -1,5 +1,5 @@
 [![build status](https://github.com/{{ cookiecutter.repo_name }}/actions/workflows/build.yml/badge.svg)](https://github.com/{{ cookiecutter.repo_name }}/actions/workflows/build.yml)
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/{{ cookiecutter.repo_name }}/blob/master/{{ cookiecutter.package_name }}.ipynb?flush_cache=True)
+[![viewer](https://img.shields.io/badge/notebook-viewer-blue)](https://calebeverett.github.io/{{ cookiecutter.repo_name }}/)
 
 # FINM33150 - {{ cookiecutter.project_name }}
 
@@ -13,3 +13,5 @@ Create a virtual environment and install dependencies with
 * Blah
 * Blah
 * Blah
+
+
