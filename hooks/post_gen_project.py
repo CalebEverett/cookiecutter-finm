@@ -16,7 +16,9 @@ if INIT_REPO:
     repo.git.add(all=True)
     repo.index.commit("Add initial project skeleton.")
     repo.create_remote("origin", url="git@github.com:{{ cookiecutter.repo_name }}.git")
+    new_branch = repo.create_head("gh-pages")
 
 if PUSH_REPO:
     remote = repo.remote("origin")
     remote.push(refspec="master:master")
+    remote.push(refspec="gh-pages:gh-pages")
